@@ -46,7 +46,7 @@ router.delete("/notes/:id", async (req, res) => {
   let notes = await readFileAsync(path.join(__dirname, "../db/db.json"));
   let parsedNotes = JSON.parse(notes);
   console.log(parsedNotes); // returns the correct array
-  let filteredNotes = parsedNotes.filter((note) => note.id !== queryNoteId);
+  let filteredNotes = await parsedNotes.filter((note) => note.id !== queryNoteId);
   console.log(filteredNotes);  // returns the same as parsedNotes (2 lines above)
   fs.writeFile(path.join(__dirname, "../db/db.json"), JSON.stringify(filteredNotes, null, 2), (err) => {
     console.log("inside writeFilteredNotes")
