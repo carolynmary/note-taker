@@ -1,10 +1,6 @@
 const fs = require('fs');
 const path = require("path");
 const router = require("express").Router();
-const util = require("util");
-
-const readFileAsync = util.promisify(fs.readFile);
-const writeFileAsync = util.promisify(fs.writeFile);
 
 let allNotes;
 
@@ -19,7 +15,7 @@ function read() {
     allNotes = JSON.parse(data);
   });
 }
-read(); // test if I need this call here
+read();
 
 // WRITE 
 // ---------------------------------------------------------------------------
@@ -49,7 +45,7 @@ router.post("/notes", (req, res) => {
   write(stringifiedNotes);
 });
 
-// DELETE - is it odd that I had to parse the param?
+// DELETE 
 // ---------------------------------------------------------------------------
 router.delete("/notes/:id", (req, res) => {
   noteToDeleteID = JSON.parse(req.params.id);
