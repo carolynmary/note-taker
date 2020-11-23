@@ -1,33 +1,29 @@
 ![header](./assets/cm_header.png)
 
 <!-- Badges: MAY NEED TO ADJUST LICENSE BADGE URL -->
-![License](https://img.shields.io/badge/License-ISC-green) </br>
+![License](https://img.shields.io/badge/License-MIT-green) </br>
 
 <!-- ![logo](pathToFileHere) -->
-# Note Taker   
- 
+# Note Taker
+[note-taker-cm.herokuapp.com](https://note-taker-cm.herokuapp.com/)
+
 - - -
 - - -
-### Use this Node CLI to keep track of important information by writing down, editing and saving notes here. 
+### Use this application to keep track of important information by writing down, editing and saving notes here. 
 
 - - -
 - - -
 
 <!-- TOC -->
-[Installation](#installation) // [How to Use](#how-to-use) // [License](#license) // [Questions & Feedback](#questions-feedback) 
-  
-## Installation
-  
-Run command `npm i` to install dependencies.
+[How to Use](#how-to-use) // [License](#license) // [Questions & Feedback](#questions-feedback) 
 
 ## How to Use 
 
-<!-- ![demo](pathToFileHere) -->
-Run command `node server`.
+![demo](./assets/noteTakerDemo.gif)
 
 ## License
     
-The code is licensed under the [ISC](https://choosealicense.com/licenses/isc/) License.
+The code is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License.
   
 ## Questions & Feedback
   
